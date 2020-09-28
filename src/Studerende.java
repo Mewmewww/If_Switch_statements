@@ -7,11 +7,11 @@ public class Studerende {
     String studieretning;
     String campus;
 
-    /*Studerende() {
+    Studerende() {
         System.out.println("Et nyt objekt er instantieret af typen Studerennde");
         studieretning = "Datamatiker";
         campus = "Vordingborg";
-    }*/
+    }
 
     public Studerende(String x, int y, String z) {
         this.navn = x;
@@ -19,4 +19,8 @@ public class Studerende {
         this.by = z;
     }
 
+    public Studerende(String x, int y) {
+        this.navn = x;
+        this.alder = y;
+    }
 }

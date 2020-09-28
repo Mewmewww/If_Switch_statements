@@ -6,12 +6,13 @@ public class Studerende_main {
         System.out.println("Print 1 for Lasse - 2 for Simon, 3 for Fredrik og 4 for Deniz");
         int person = input.nextInt();
 
-        Studerende st1 = new Studerende("Lasse", 22, "Haslev");
+        Bil dyt = new Bil();
 
-        /* st1.navn = "Lasse";
+        Studerende st1 = new Studerende();
+        st1.navn = "Lasse";
         st1.alder = 22;
         st1.by = "Skuderløse";
-        */
+
 
         Studerende st2 = new Studerende("Simon", 24, "Faxe");
         /*
@@ -20,7 +21,7 @@ public class Studerende_main {
         st2.by = "Unknown";
         */
 
-        Studerende st3 = new Studerende("Fredrik", 22, "Nykøbing Falster");
+        Studerende st3 = new Studerende("Fredrik", 22);
         /*
         st3.navn = "Fredrik";
         st3.alder = 22;
