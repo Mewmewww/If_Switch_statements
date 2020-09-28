@@ -31,19 +31,11 @@ public class Studerende_main {
       //  st4.studieretning = "Datamatiker";
 
         switch (person) {
-            case 1:
-                System.out.println("Alder = " + st1.alder + " Navn = " + st1.navn + " By = " + st1.by);
-                break;
-            case 2:
-                System.out.println("Alder = " + st2.alder + " Navn = " + st2.navn + " By = " + st2.by);
-                break;
-            case 3:
-                System.out.println("Alder = " + st3.alder + " Navn = " + st3.navn + " By = " + st3.by);
-                break;
-            case 4:
-                System.out.println("Alder = " + st4.alder + " Navn = " + st4.navn + " By = " + st4.by);
-                break;
-    }
+            case 1 -> System.out.println("Alder = " + st1.alder + " Navn = " + st1.navn + " By = " + st1.by + " Studieretning = " + st1.studieretning);
+            case 2 -> System.out.println("Alder = " + st2.alder + " Navn = " + st2.navn + " By = " + st2.by + " Studieretning = " + st2.studieretning);
+            case 3 -> System.out.println("Alder = " + st3.alder + " Navn = " + st3.navn + " By = " + st3.by + "Studieretning = " + st3.studieretning);
+            case 4 -> System.out.println("Alder = " + st4.alder + " Navn = " + st4.navn + " By = " + st4.by + "Studieretning = " + st4.studieretning);
+        }
 
     }
 
