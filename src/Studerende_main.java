@@ -6,35 +6,39 @@ public class Studerende_main {
         System.out.println("Print 1 for Lasse - 2 for Simon, 3 for Fredrik og 4 for Deniz");
         int person = input.nextInt();
 
-        Studerende st1 = new Studerende();
-        st1.navn = "Lasse";
+        Studerende st1 = new Studerende("Lasse", 22, "Haslev");
+
+        /* st1.navn = "Lasse";
         st1.alder = 22;
         st1.by = "Skuderløse";
-        //st1.studieretning = "Datamatiker";
+        */
 
-        Studerende st2 = new Studerende();
+        Studerende st2 = new Studerende("Simon", 24, "Faxe");
+        /*
         st2.navn = "Simon";
         st2.alder = 20;
         st2.by = "Unknown";
-        //st2.studieretning = "Datamatiker";
+        */
 
-        Studerende st3 = new Studerende();
+        Studerende st3 = new Studerende("Fredrik", 22, "Nykøbing Falster");
+        /*
         st3.navn = "Fredrik";
         st3.alder = 22;
         st3.by = "Nykøbing Falster";
-      //  st3.studieretning = "Datamatiker";
+        */
 
-        Studerende st4 = new Studerende();
+        Studerende st4 = new Studerende("Deniz", 20, "Vordingborg");
+        /*
         st4.navn = "Deniz";
         st4.alder = 20;
         st4.by = "Vordingborg";
-      //  st4.studieretning = "Datamatiker";
+        */
 
         switch (person) {
-            case 1 -> System.out.println("Alder = " + st1.alder + " Navn = " + st1.navn + " By = " + st1.by + " Studieretning = " + st1.studieretning);
-            case 2 -> System.out.println("Alder = " + st2.alder + " Navn = " + st2.navn + " By = " + st2.by + " Studieretning = " + st2.studieretning);
-            case 3 -> System.out.println("Alder = " + st3.alder + " Navn = " + st3.navn + " By = " + st3.by + " Studieretning = " + st3.studieretning);
-            case 4 -> System.out.println("Alder = " + st4.alder + " Navn = " + st4.navn + " By = " + st4.by + " Studieretning = " + st4.studieretning);
+            case 1 -> System.out.println("Navn = " + st1.navn + " Alder = " + st1.alder + " By = " + st1.by);
+            case 2 -> System.out.println("Navn = " + st2.navn + " Alder = " + st2.alder + " By = " + st2.by);
+            case 3 -> System.out.println("Navn = " + st3.navn + " Alder = " + st3.alder + " By = " + st3.by);
+            case 4 -> System.out.println("Navn = " + st4.navn + " Alder = " + st4.alder + " By = " + st4.by);
         }
 
     }
